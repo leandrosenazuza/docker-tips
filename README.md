@@ -12,3 +12,10 @@ After that, you have to look for the folder "..\oracle\docker-images\OracleDatab
 If you run the command "docker images", you should see something like that: "oracle/database          18.4.0-xe   4d9c07d48a87   About an hour ago   5.9GB". It means that you created an oracle database image. 
 
 Let's create the container. Execute: "docker run --name containerOracle -e ORACLE_PWD=admin123 -p 1521:1521 -d oracle/database:18.4.0-xe". ORACLE_PWD is the password of the database, and the standard user is system.
+
+All the process spend some time. You have to be patient.
+
+To connect to the database, your dbeaver (or whatever database management system), should look like this:
+
+![image](https://github.com/user-attachments/assets/0e948a0c-7234-4140-add9-04d5f69dc14b)
+ 
